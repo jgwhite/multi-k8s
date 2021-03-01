@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: jgwhite/multi-client
+          image: jgwhite/multi-client:1.1.0
           ports:
             - containerPort: 3000
