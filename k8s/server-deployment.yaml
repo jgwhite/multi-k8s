@@ -6,14 +6,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      component: api
+      component: server
   template:
     metadata:
       labels:
-        component: api
+        component: server
     spec:
       containers:
-        - name: api
+        - name: server
           image: jgwhite/multi-server
           ports:
             - containerPort: 5000
